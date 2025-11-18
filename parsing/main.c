@@ -3,12 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tony <tony@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: toroman <toroman@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 14:04:50 by tony              #+#    #+#             */
-/*   Updated: 2025/11/13 14:06:29 by tony             ###   ########.fr       */
+/*   Updated: 2025/11/18 15:16:25 by toroman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cube3d.h"
 
+int	main(int ac, char **av)
+{
+	if (ac == 2)
+	{
+		check_file(av[1]);
+	}
+}

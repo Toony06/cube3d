@@ -6,13 +6,13 @@
 /*   By: toroman <toroman@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 14:03:31 by toroman           #+#    #+#             */
-/*   Updated: 2025/04/03 11:42:23 by toroman          ###   ########.fr       */
+/*   Updated: 2025/11/18 15:12:57 by toroman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/get_next_line.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strchrr(const char *s, int c)
 {
 	size_t	i;
 
@@ -28,7 +28,7 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-char	*ft_strdup(const char *s)
+char	*ft_strdupp(const char *s)
 {
 	size_t	i;
 	size_t	len;
@@ -52,7 +52,7 @@ char	*ft_strdup(const char *s)
 	return (dest);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoinn(char const *s1, char const *s2)
 {
 	int			i;
 	int			j;
@@ -62,7 +62,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (s1 == NULL || s2 == NULL)
 		return (0);
-	result = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	result = malloc(sizeof(char) * (ft_strlenn(s1) + ft_strlenn(s2) + 1));
 	if (result == NULL)
 		return (0);
 	while (s1[i])
@@ -80,7 +80,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (result);
 }
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlenn(const char *s)
 {
 	size_t	i;
 

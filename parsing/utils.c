@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tony <tony@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: toroman <toroman@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 12:51:41 by tony              #+#    #+#             */
-/*   Updated: 2025/11/13 13:15:46 by tony             ###   ########.fr       */
+/*   Updated: 2025/11/18 15:06:43 by toroman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ void    check_fd(int fd)
 {
     if (fd == -1)
     {
-        pintf("map its not accessible\n");
+        printf("map its not accessible\n");
         close(fd);
-        exite(1);
+        exit(1);
     }
 }
 

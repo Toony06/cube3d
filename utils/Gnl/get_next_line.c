@@ -6,7 +6,7 @@
 /*   By: toroman <toroman@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 14:16:17 by toroman           #+#    #+#             */
-/*   Updated: 2025/04/03 11:42:44 by toroman          ###   ########.fr       */
+/*   Updated: 2025/11/18 15:13:39 by toroman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,18 +26,18 @@ char	*fill_line_buffer(int fd, char *stack)
 	char	*tmp;
 
 	if (!stack)
-		stack = ft_strdup("");
+		stack = ft_strdupp("");
 	i = 1;
 	buffer = malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!buffer)
 		return (NULL);
-	while (i != 0 && !ft_strchr(stack, '\n'))
+	while (i != 0 && !ft_strchrr(stack, '\n'))
 	{
 		i = read(fd, buffer, BUFFER_SIZE);
 		if (i == -1)
 			return (free_all(stack, buffer));
 		buffer[i] = '\0';
-		tmp = ft_strjoin(stack, buffer);
+		tmp = ft_strjoinn(stack, buffer);
 		free(stack);
 		stack = tmp;
 	}
@@ -59,7 +59,7 @@ char	*next_line(char *stack)
 		free (stack);
 		return (NULL);
 	}
-	new_stack = malloc(sizeof(char) * (ft_strlen(stack) - i + 1));
+	new_stack = malloc(sizeof(char) * (ft_strlenn(stack) - i + 1));
 	i++;
 	j = 0;
 	while (stack[i])

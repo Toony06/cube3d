@@ -6,7 +6,7 @@
 /*   By: toroman <toroman@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 15:53:59 by toroman           #+#    #+#             */
-/*   Updated: 2024/12/16 17:29:42 by toroman          ###   ########.fr       */
+/*   Updated: 2025/11/18 15:13:54 by toroman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@
 # include <stdlib.h>
 # include <stdio.h>
 
-char	*ft_strchr(const char *s, int c);
-char	*ft_strdup(const char *s);
-char	*ft_strjoin(char const *s1, char const *s2);
-size_t	ft_strlen(const char *s);
+char	*ft_strchrr(const char *s, int c);
+char	*ft_strdupp(const char *s);
+char	*ft_strjoinn(char const *s1, char const *s2);
+size_t	ft_strlenn(const char *s);
 char	*get_next_line(int fd);
 
 #endif

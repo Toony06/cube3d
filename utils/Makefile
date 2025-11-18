@@ -6,7 +6,7 @@
 #    By: toroman <toroman@student.42nice.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/26 09:33:14 by toroman           #+#    #+#              #
-#    Updated: 2025/04/03 11:41:37 by toroman          ###   ########.fr        #
+#    Updated: 2025/11/18 15:11:16 by toroman          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ GNL_PATH = ./Gnl
 
 GNL_SRC = ${addprefix ${GNL_PATH}/, get_next_line.c get_next_line_utils.c}
 
-SRCS = ${LIBFT_SRC} ${PRINTF_SRC}
+SRCS = ${LIBFT_SRC} ${PRINTF_SRC} ${GNL_SRC}
 
 OBJS = ${SRCS:.c=.o}
 
